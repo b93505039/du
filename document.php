@@ -4,8 +4,7 @@ require_once("./inc/headDocument.php");
 session_cache_limiter('private, must-revalidate');
 session_start(); 
 require_once("./inc/sessionCheck.php");
-$aid=$_SESSION['id'];
-$aname=$_SESSION['chineseName'];
+
 if(!empty($_GET['s']))
 	$s=$_GET['s'];
 else
@@ -28,8 +27,9 @@ else if($_SESSION['type']==2){
 }
 
 require_once("./inc/db.php");
-$sql = "select p.Name Name, p.id pid, p.status status, p.remark remark
+$sql = "select p.Name Name, p.id pid, p.status status, p.remark remark, a.name aname
         from project p
+		left join account.account a on p.acc_id=a.id
 		where $where
 		order by p.Name";
 
@@ -91,7 +91,7 @@ $count = 1;
 	<tr class="list">
 		<td align=center><font color=hotpink><?php echo $count?></font></td>
 		<td><?php echo $row['Name']?></td>
-        <td><?php echo $aname?></td>
+        <td><?php echo $row['aname']?></td>
 		<td align=center>
 <?php
 		if($_SESSION['type']==3){
