@@ -1,0 +1,63 @@
+#centercontainer {
+	text-align: center;
+}
+.bluebox300 {
+	margin: auto;
+	width: 300px;
+	background-image: url(image/blueline300.jpg);
+}
+.bluebox800 {
+	margin: auto;
+	width: 800px;
+	background-image: url(image/blueline800.jpg);
+}
+.whitebox1024 {
+	margin: auto;
+	width: 1024px;
+	font-family: "微軟正黑體", "新細明體";
+}
+.whitebox600 {
+	margin: auto;
+	width: 600px;
+	font-family: "微軟正黑體", "新細明體";
+	background-image: url(image/blueline800.jpg);
+}
+.tabletitle {
+	text-align: center;
+	color: #F00;
+	display: inline;
+}
+.centertext {
+	text-align: center;
+}
+.words {
+	font-family: "微軟正黑體", "新細明體";
+}
+.banner {
+	margin: auto;
+	height: 161px;
+	width: 800px;
+}
+.emptyline {
+	height: 5px;
+}
+.emptybox {
+	height: 60px;
+}
+.inputbox {
+	font-family: "微軟正黑體", "新細明體";
+	text-align: right;
+	padding: 1px;
+	color: #FFF;
+	font-weight: bold;
+}
+.warningwords {
+	color: #F00;
+	font-size: small;
+}
+tr.list:hover {
+	background-color: #edece6;
+}
+form {
+	display: inline;
+}
