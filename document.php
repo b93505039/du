@@ -64,11 +64,12 @@ $count = 1;
 	</form>
 -->
 <!--<a href ="logout.php">登出</a>-->
+
 <div class="emptyline"></div>
 <img src="image/r.png"></img> = Active
 <img src="image/g.png"></img> = Completed
 <div class="emptyline"></div>
-
+<a href ="../homepage">homepage</a>
 <table style="border:3px solid rgb(109, 2, 107); width:1024px; word-break:break-all" frame="border" rules="all" cellpadding="2">
 	<tr>
 	<td align=center width="3%"><div class="tabletitle"></div></td>
