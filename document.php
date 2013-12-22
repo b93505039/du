@@ -69,7 +69,7 @@ $count = 1;
 <img src="image/r.png"></img> = Active
 <img src="image/g.png"></img> = Completed
 <div class="emptyline"></div>
-<a href ="../homepage">homepage</a>
+<a href ="../homepage">(Homepage)</a>
 <table style="border:3px solid rgb(109, 2, 107); width:1024px; word-break:break-all" frame="border" rules="all" cellpadding="2">
 	<tr>
 	<td align=center width="3%"><div class="tabletitle"></div></td>
