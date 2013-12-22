@@ -24,11 +24,12 @@
 <?php		require_once("./inc/toDrawings.php");
 		}
 		else{
-	    
+	    /** 檔案資訊先不顯漏
 			echo "檔案名稱: " . $_FILES["file".$i]["name"]."<br/>";
 			echo "檔案類型: " . $_FILES["file".$i]["type"]."<br/>";
 			echo "大小: " . ($_FILES["file".$i]["size"] / 1024)." Kb<br />";
-			//echo "暫時名稱: " . $_FILES["file".$i]["tmp_name"]."<br/>";
+		*/
+		//echo "暫時名稱: " . $_FILES["file".$i]["tmp_name"]."<br/>";
 		
 			if(!is_dir($route))
 				mkdir($route,0755,true);
