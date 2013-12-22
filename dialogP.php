@@ -27,8 +27,9 @@ else if($_SESSION['type']==2){
 }
 
 require_once("./inc/db.php");
-$sql = "select * ,p.id pid ,a.name aname, a.id aid
+$sql = "select p.Name Name, p.id pid, p.status status, p.remark remark, a.name aname
         from project p
+		left join account.account a on p.acc_id=a.id
 		where $where
 		order by p.Name";
 
